@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sunrise Sunset Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Sunrise-Sunset times Dashboard</h1>
+  </header>
+
+  <main>
+    <div id="location-form">
+      <label for="location-input">Enter location:</label>
+      <input type="text" id="location-input" placeholder="City, Country">
+      <button id="search-btn">Search</button>
+      <button id="current-location-btn">Use Current Location</button>
+    </div>
+    
+    <div id="dashboard" class="hidden">
+      
+      <div id="today-data"></div>
+      <div id="tomorrow-data"></div>
+    </div>
+
+    <div id="error-message" class="hidden">
+      
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
